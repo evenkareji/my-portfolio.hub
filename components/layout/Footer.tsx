@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../atoms/logo/Logo';
+
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import { Social } from '../atoms/Social';
-import { Inner } from './Inner';
+
 import { InnerContents } from './InnerContents';
 
 export const Footer = () => {
@@ -10,7 +10,7 @@ export const Footer = () => {
     <Flex
       as="footer"
       bg="gray.300"
-      height={{ base: '100px', md: '130px' }}
+      height={{ base: '200px', md: '280px' }}
       align="center"
     >
       <InnerContents>
@@ -21,7 +21,7 @@ export const Footer = () => {
           w="100%"
           justifyContent={{ base: 'center', md: 'space-between' }}
         >
-          <Heading as="h4" fontSize={{ base: 'md', md: 'lg' }}>
+          <Heading as="h4" fontSize={{ base: 20, md: 30 }}>
             TM
           </Heading>
 

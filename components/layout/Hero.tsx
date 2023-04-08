@@ -22,12 +22,13 @@ const Hero: FC<Props> = memo(({ title, subtitle, imageOn = false }) => {
             sizes="(min-width:1152px) 1152px,100vh"
             priority
             placeholder="blur"
-            style={{ transition: '0.2s' }}
           />
         </Box>
       )}
-      <Box textAlign="center">
-        <Heading>{title}</Heading>
+      <Box textAlign="center" pt={20} pb={0}>
+        <Heading as="h2" fontSize={{ base: 60, md: 100 }}>
+          {title}
+        </Heading>
         <p>{subtitle}</p>
       </Box>
     </Box>

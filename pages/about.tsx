@@ -1,13 +1,22 @@
 import React from 'react';
 
 import Hero from '../components/layout/Hero';
-import { Box, Heading, Spacer } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import { Social } from '../components/atoms/Social';
 import { Inner } from '../components/layout/Inner';
+import eyecatch from '../images/hero.png';
+import Meta from '../components/molecules/Meta';
 
 const About = () => {
   return (
     <>
+      <Meta
+        pageTitle="アバウト"
+        pageDesc="自らの使命"
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <Hero title="About" subtitle="~自らの使命〜" />
 
       <Inner>

@@ -21,14 +21,14 @@ export const Social = (props) => {
         bg={isFooter ? 'gray.300' : '#ffffff'}
         href="https://twitter.com/afim_tomo"
       >
-        <FontAwesomeIcon icon={faTwitter} size="1x" />
+        <FontAwesomeIcon icon={faTwitter} size="2x" />
       </Button>
       <Button
         as="a"
         href="https://github.com/evenkareji"
         bg={isFooter ? 'gray.300' : '#ffffff'}
       >
-        <FontAwesomeIcon icon={faGithub} size="1x" />
+        <FontAwesomeIcon icon={faGithub} size="2x" />
       </Button>
     </Flex>
   );

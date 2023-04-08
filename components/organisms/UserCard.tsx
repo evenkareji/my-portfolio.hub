@@ -5,8 +5,8 @@ import hero from 'images/hero.png';
 const UserCard = () => {
   return (
     <Box
-      width="260px"
-      height="260px"
+      width={{ base: '360px', md: '260px' }}
+      height={{ base: '360px', md: '260px' }}
       p={0}
       bg="white"
       borderRadius="10px"
