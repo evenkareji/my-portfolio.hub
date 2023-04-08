@@ -11,9 +11,9 @@ type Props = {
 
 const Hero: FC<Props> = memo(({ title, subtitle, imageOn = false }) => {
   return (
-    <Box position="relative" mb={{ base: 1, md: 2 }}>
+    <Box position="relative" mb={{ base: 5, md: 7 }}>
       {imageOn && (
-        <Box mb={{ base: 10, md: 20 }}>
+        <Box py={5} mb={{ base: 10, md: 14 }}>
           <Image
             src={hero}
             alt="TikTok風アプリAFim"

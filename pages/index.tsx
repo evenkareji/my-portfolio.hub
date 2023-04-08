@@ -6,11 +6,13 @@ import { Box, Wrap } from '@chakra-ui/react';
 
 export const Home = () => {
   return (
-    <Box mb={{ base: 8, md: 12 }}>
+    <Box mb={{ base: 20, md: 32 }}>
       <Hero title="Works" subtitle="~喜んでもらえるものを作る~" imageOn />
 
       <InnerContents>
-        <Wrap>
+        <Wrap justify={{ base: 'center', lg: 'flex-start' }} spacing="10px">
+          <UserCard />
+          <UserCard />
           <UserCard />
           <UserCard />
           <UserCard />

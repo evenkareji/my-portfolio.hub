@@ -13,24 +13,17 @@ const UserCard = () => {
       shadow="md"
       _hover={{ cursor: 'pointer', boxShadow: 'none' }}
     >
-      <div
-        style={{
-          borderRadius: '5px',
-          overflow: 'hidden',
-          transition: '0.2s',
-        }}
-      >
-        <Image
-          src={hero}
-          alt="TikTok風アプリAFim"
-          objectFit="cover"
-          layout="responsive"
-          width="260px"
-          height="260px"
-          priority
-          placeholder="blur"
-        />
-      </div>
+      <Image
+        style={{ borderRadius: '5px', overflow: 'hidden' }}
+        src={hero}
+        alt="TikTok風アプリAFim"
+        objectFit="cover"
+        layout="responsive"
+        width="260px"
+        height="260px"
+        priority
+        placeholder="blur"
+      />
     </Box>
   );
 };
