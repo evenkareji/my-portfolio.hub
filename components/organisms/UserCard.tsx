@@ -11,7 +11,12 @@ const UserCard = () => {
       bg="white"
       borderRadius="10px"
       shadow="md"
-      _hover={{ cursor: 'pointer', boxShadow: 'none' }}
+      _hover={{
+        cursor: 'pointer',
+        boxShadow: 'none',
+        transform: 'translateY(-20px)',
+      }}
+      transition="0.2s"
     >
       <Image
         style={{ borderRadius: '5px', overflow: 'hidden' }}
