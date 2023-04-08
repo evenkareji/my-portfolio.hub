@@ -3,9 +3,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
-import Layout from '../components/Layout';
-import theme from '../styles/theme/theme';
 import '../styles/globals.css';
+import Layout from '../components/layout/Layout';
+import theme from '../styles/theme/theme';
 
 export default function App({ Component, pageProps }) {
   return (

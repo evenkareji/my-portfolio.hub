@@ -1,19 +1,17 @@
 import React from 'react';
 
-import Hero from '../components/Hero';
-
-import { BodyInner } from '../components/layout/BodyInner';
+import Hero from '../components/layout/Hero';
 import { Box, Heading, Spacer } from '@chakra-ui/react';
 import { Social } from '../components/atoms/Social';
 import { Inner } from '../components/layout/Inner';
 
-export default function About() {
+const About = () => {
   return (
     <>
       <Hero title="About" subtitle="~自らの使命〜" />
 
       <Inner>
-        <Box w={{ base: 400, md: 600 }} pb={50} mx="auto">
+        <Box w={{ base: '100%', md: 600 }} pb={50}>
           <p>
             Cubeが得意とする分野はモノづくりです。3次元から2次元の造形、プログラミングやデザインなど、さまざまな技術を組み合わせることによって社会や環境と結びつけるクリエイティブを提案し続けています。
           </p>
@@ -46,11 +44,14 @@ export default function About() {
             </p>
           </div>
         </Box>
-        <Box width={{ base: '', md: '100' }} mx="auto" textAlign="left">
-          <Heading fontSize={1}>Contact</Heading>
+        <Box w={100}>
+          <Heading fontSize={{ base: 1, md: 'md' }} color="gray.600">
+            Contact
+          </Heading>
           <Social />
         </Box>
       </Inner>
     </>
   );
-}
+};
+export default About;

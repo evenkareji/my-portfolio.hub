@@ -1,4 +1,4 @@
-import Hero from '../../components/Hero';
+import Hero from '../../components/layout/Hero';
 import React from 'react';
 
 export default function Blog() {

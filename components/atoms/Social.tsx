@@ -19,13 +19,13 @@ export const Social = (props) => {
       <Button
         as="a"
         bg={isFooter ? 'gray.300' : '#ffffff'}
-        href="https://twitter.com"
+        href="https://twitter.com/afim_tomo"
       >
         <FontAwesomeIcon icon={faTwitter} size="1x" />
       </Button>
       <Button
         as="a"
-        href="https://github.com"
+        href="https://github.com/evenkareji"
         bg={isFooter ? 'gray.300' : '#ffffff'}
       >
         <FontAwesomeIcon icon={faGithub} size="1x" />

@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from './atoms/logo/Logo';
-import { Box, Center, Flex, Spacer, Stack, VStack } from '@chakra-ui/react';
-import { Social } from './atoms/Social';
-import { Inner } from './layout/Inner';
-import { BodyInner } from './layout/BodyInner';
+import Logo from '../atoms/logo/Logo';
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import { Social } from '../atoms/Social';
+import { Inner } from './Inner';
+import { InnerContents } from './InnerContents';
 
 export const Footer = () => {
   return (
@@ -13,7 +13,7 @@ export const Footer = () => {
       height={{ base: '100px', md: '130px' }}
       align="center"
     >
-      <Inner>
+      <InnerContents>
         <Flex
           alignItems="center"
           direction={{ base: 'column', md: 'row' }}
@@ -21,11 +21,15 @@ export const Footer = () => {
           w="100%"
           justifyContent={{ base: 'center', md: 'space-between' }}
         >
-          <Logo isFooter={true} />
+          <Heading as="h4" fontSize={{ base: 'md', md: 'lg' }}>
+            TM
+          </Heading>
 
-          <Social isFooter={true} />
+          <Box width={100}>
+            <Social isFooter={true} />
+          </Box>
         </Flex>
-      </Inner>
+      </InnerContents>
     </Flex>
   );
 };

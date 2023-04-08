@@ -17,6 +17,7 @@ export const MenuIconButton: FC<Props> = memo((props) => {
       icon={<HamburgerIcon />}
       size="lg"
       variant="unstyled"
+      _focus={{ boxShadow: 'none' }}
       onClick={onOpen}
     />
   );

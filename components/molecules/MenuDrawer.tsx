@@ -4,6 +4,7 @@ import {
   DrawerBody,
   DrawerContent,
   DrawerOverlay,
+  Spacer,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React, { FC, memo } from 'react';
@@ -17,18 +18,20 @@ export const MenuDrawer: FC<Props> = memo((props) => {
   return (
     <Drawer placement="right" size="xs" onClose={onClose} isOpen={isOpen}>
       <DrawerOverlay>
-        <DrawerContent>
-          <DrawerBody p={0} bg="gray.100">
+        <DrawerContent bg="gray.100">
+          <DrawerBody mt={10} p={0}>
             <Link href="/">
               <Button w="100%" onClick={onClose}>
                 Home
               </Button>
             </Link>
+
             <Link href="/about">
               <Button w="100%" onClick={onClose}>
                 About
               </Button>
             </Link>
+
             <Link href="/blog">
               <Button w="100%" onClick={onClose}>
                 Blog

@@ -14,7 +14,6 @@ export default function Logo(props) {
         _hover={{ cursor: 'poiter' }}
         py={2}
         color={isFooter ? '#000000' : '#fff'}
-        // px={{ base: '4', md: '6' }}
         bg={isFooter ? 'gray.300' : '#E74040'}
       >
         <a>TM</a>
