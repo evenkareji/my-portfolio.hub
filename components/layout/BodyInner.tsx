@@ -1,21 +1,19 @@
-import { Box } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import React from 'react';
 
-export const Inner = (props) => {
+export const BodyInner = (props) => {
   const { children } = props;
   return (
-    <Box
-      mx="auto"
+    <Container
       maxW={800}
       minW={300}
       py={100}
       px={0}
       display="flex"
-      w="93%"
+      w="fit-content"
       flexDirection={{ base: 'column', md: 'row' }}
-      justifyContent="space-between"
     >
       {children}
-    </Box>
+    </Container>
   );
 };

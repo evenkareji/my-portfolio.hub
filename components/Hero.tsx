@@ -1,11 +1,14 @@
 import React from 'react';
+import { Box, Heading } from '@chakra-ui/react';
 
 export default function Hero({ title, subtitle, imageOn = false }) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
+    <>
       {imageOn && <figure>[画像]</figure>}
-    </div>
+      <Box textAlign="center" position="relative">
+        <Heading>{title}</Heading>
+        <p>{subtitle}</p>
+      </Box>
+    </>
   );
 }

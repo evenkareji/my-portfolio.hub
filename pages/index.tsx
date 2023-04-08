@@ -1,5 +1,11 @@
 import Hero from '../components/Hero';
 
-export default function Home() {
-  return <Hero title="Works" subtitle="喜んでもらえるものを作る" imageOn />;
-}
+export const Home = () => {
+  return (
+    <>
+      <Hero title="Works" subtitle="~喜んでもらえるものを作る~" imageOn />
+    </>
+  );
+};
+
+export default Home;

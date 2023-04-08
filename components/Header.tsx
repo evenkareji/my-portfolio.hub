@@ -1,10 +1,11 @@
 import { Box, Flex, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 
-import Logo from './atoms/logo/logo';
+import Logo from './atoms/logo/Logo';
 import Nav from './molecules/Nav';
 import { MenuDrawer } from './molecules/MenuDrawer';
 import { MenuIconButton } from './atoms/button/MenuIconButton';
+import { Inner } from './layout/Inner';
 
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
