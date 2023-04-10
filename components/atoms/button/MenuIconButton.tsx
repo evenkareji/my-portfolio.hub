@@ -10,9 +10,6 @@ export const MenuIconButton: FC<Props> = memo((props) => {
   return (
     <IconButton
       aria-label="メニューボタン"
-      position="absolute"
-      right={5}
-      top={3}
       display={{ base: 'flex', md: 'none' }}
       icon={<HamburgerIcon />}
       size="lg"

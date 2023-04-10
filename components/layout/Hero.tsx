@@ -12,7 +12,7 @@ type Props = {
 const Hero: FC<Props> = memo(({ title, subtitle, imageOn = false }) => {
   return (
     <Box position="relative" mb={{ base: 5, md: 7 }}>
-      {imageOn && (
+      {/* {imageOn && (
         <Box py={5} mb={{ base: 10, md: 14 }}>
           <Image
             src={hero}
@@ -24,7 +24,7 @@ const Hero: FC<Props> = memo(({ title, subtitle, imageOn = false }) => {
             placeholder="blur"
           />
         </Box>
-      )}
+      )} */}
       <Box textAlign="center" pt={20} pb={0}>
         <Heading as="h2" fontSize={{ base: 60, md: 100 }}>
           {title}

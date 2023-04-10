@@ -10,13 +10,14 @@ import { Inner } from './Inner';
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box px={{ base: 4, md: 8 }} py={{ base: 2, md: 4 }}>
+    <Box px={{ base: 4, md: 8 }} py={{ base: 2, md: 4 }} mx="auto" width="90%">
       <Flex
         as="header"
         align="center"
         padding={{ base: 3 }}
         gap={128}
         position="relative"
+        justifyContent={{ base: 'space-between', md: 'flex-start' }}
       >
         <Logo />
         <Nav />

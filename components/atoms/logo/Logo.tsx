@@ -11,7 +11,7 @@ export default function Logo(props) {
         w={100}
         fontSize={{ base: 'lg', md: 'xl' }}
         textAlign="center"
-        _hover={{ cursor: 'poiter' }}
+        _hover={{ cursor: 'pointer' }}
         py={2}
         color={isFooter ? '#000000' : '#fff'}
         bg={isFooter ? 'gray.300' : '#E74040'}

@@ -34,7 +34,7 @@ export const MenuDrawer: FC<Props> = memo((props) => {
 
             <Link href="/blog">
               <Button w="100%" onClick={onClose}>
-                Blog
+                All&nbsp;Works
               </Button>
             </Link>
           </DrawerBody>

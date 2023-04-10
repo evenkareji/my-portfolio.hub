@@ -25,7 +25,7 @@ export default function Nav() {
         </Box>
         <Box as="li" mr={42}>
           <Link href="/blog">
-            <a>Blog</a>
+            <a>All&nbsp;Works</a>
           </Link>
         </Box>
       </Flex>

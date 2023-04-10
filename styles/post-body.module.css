@@ -1,0 +1,33 @@
+.stack > * + * {
+  margin-top: var(--stack-space, 1.5em);
+}
+
+.stack h1 {
+  --stack-space: 2em;
+  font-weight: bold;
+  font-size: 2em;
+}
+.stack h2,
+.stack h3 {
+  --stack-space: 2em;
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: 'Noto Sans JP';
+}
+
+.stack h2 + *,
+.stack h3 + * {
+  --stack-space: 0.8em;
+}
+
+.stack p {
+  font-family: 'Noto Sans JP';
+  font-weight: 500;
+  line-height: 1.8;
+  color: #474040;
+}
+
+.stack ul {
+  padding: revert;
+  list-style: revert;
+}
