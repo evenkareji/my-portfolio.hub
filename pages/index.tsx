@@ -1,5 +1,4 @@
 import Hero from '../components/layout/Hero';
-import UserCard from '../components/organisms/UserCard';
 
 import { InnerContents } from '../components/layout/InnerContents';
 import { Box, Wrap } from '@chakra-ui/react';

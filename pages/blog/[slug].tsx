@@ -59,7 +59,13 @@ const Post: FC<Props> = (props) => {
             />
            </figure> */}
 
-            <ConvertBody contentHTML={content} />
+            {/* microCmsの画像プロパティにwidth、heightが消えていて下記の表記が使えない */}
+
+            {/* <ConvertBody contentHTML={content} /> */}
+            <div
+              dangerouslySetInnerHTML={{ __html: content }}
+              className={styles.post}
+            ></div>
           </PostBodyCss>
         </Box>
         <Box w={100}>

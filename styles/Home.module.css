@@ -33,4 +33,7 @@
   list-style-type: decimal;
   list-style-position: inside;
 }
+.post > p > a {
+  color: #0000ff;
+}
 /*# sourceMappingURL=Home.module.css.map */

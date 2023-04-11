@@ -1,4 +1,4 @@
-import { Box, Wrap } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Hero from '../../components/layout/Hero';
 import React from 'react';
 import Meta from '../../components/molecules/Meta';
