@@ -7,11 +7,17 @@
   font-weight: bold;
   font-size: 2em;
 }
-.stack h2,
-.stack h3 {
+.stack h2 {
   --stack-space: 2em;
   font-weight: bold;
   font-size: 1.4em;
+  font-family: 'Noto Sans JP';
+}
+.stack h3 {
+  --stack-space: 2em;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #3a3636;
   font-family: 'Noto Sans JP';
 }
 
@@ -30,4 +36,7 @@
 .stack ul {
   padding: revert;
   list-style: revert;
+}
+.stack a {
+  color: blue;
 }
