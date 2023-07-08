@@ -13,8 +13,6 @@ const UserCard = () => {
       shadow="md"
       _hover={{
         cursor: 'pointer',
-        boxShadow: 'none',
-        transform: 'translateY(-20px)',
       }}
       transition="0.2s"
     >

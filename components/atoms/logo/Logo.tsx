@@ -9,10 +9,11 @@ export default function Logo(props) {
       <Heading
         as="h1"
         w={100}
-        fontSize={{ base: 'lg', md: 'xl' }}
+        fontSize={{ base: 'sm', md: 'xl' }}
         textAlign="center"
         _hover={{ cursor: 'pointer' }}
         py={2}
+        px={4}
         color={isFooter ? '#000000' : '#fff'}
         bg={isFooter ? 'gray.300' : '#E74040'}
       >

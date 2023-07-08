@@ -12,6 +12,8 @@ export const Footer = () => {
       bg="gray.300"
       height={{ base: '200px', md: '280px' }}
       align="center"
+      w="100%"
+      minW={300}
     >
       <InnerContents>
         <Flex

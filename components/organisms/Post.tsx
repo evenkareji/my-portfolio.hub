@@ -1,7 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
+import { Box, Wrap } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import Image from 'next/image';
-import { Box, Flex, Wrap } from '@chakra-ui/react';
+import Link from 'next/link';
+
 const Posts = ({ posts }) => {
   return (
     <Wrap justify={{ base: 'center', lg: 'flex-start' }} spacing="10px">
@@ -10,21 +11,13 @@ const Posts = ({ posts }) => {
           <Link href={`/blog/${slug}`}>
             <a>
               <Box
-                width={{ base: '360px', md: '260px' }}
-                height={{ base: '360px', md: '260px' }}
+                width={{ base: '280px', md: '260px' }}
+                height={{ base: '280px', md: '260px' }}
                 p={0}
                 bg="white"
-                // bosrderRadius="10px"
                 shadow="md"
-                _hover={{
-                  cursor: 'pointer',
-                  boxShadow: 'none',
-                  transform: 'translateY(-20px)',
-                }}
-                transition="0.2s"
               >
-                <Image
-                  style={{ borderRadius: '5px', overflow: 'hidden' }}
+                <SImage
                   src={eyecatch?.url}
                   alt=""
                   objectFit="cover"
@@ -40,25 +33,12 @@ const Posts = ({ posts }) => {
         </article>
       ))}
     </Wrap>
-
-    // {posts.map(({ title, slug, eyecatch }) => (
-    //   <article key={slug}>
-    //     <Link href={`/blog/${slug}`}>
-    //       <a>
-    //         <h2>{title}</h2>
-    //         <figure>
-    //           <Image
-    //             src={eyecatch?.url}
-    //             alt=""
-    //             layout="responsive"
-    //             width={eyecatch?.width}
-    //             height={eyecatch?.height}
-    //           />
-    //         </figure>
-    //       </a>
-    //     </Link>
-    //   </article>
-    // ))}
   );
 };
+const SImage = styled(Image)`
+  &:hover {
+    transform: scale(110%);
+  }
+  transition: 0.2s;
+`;
 export default Posts;

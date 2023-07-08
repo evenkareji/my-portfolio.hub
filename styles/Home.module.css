@@ -35,19 +35,10 @@
 }
 .post > p > a {
   color: #0000ff;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 .post > p > a:hover {
-  color: #0000ff;
-  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
 }
 
 .post > p > a:before {

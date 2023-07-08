@@ -1,18 +1,10 @@
-import React from 'react';
-
-import Hero from '../components/layout/Hero';
 import { Box, Heading } from '@chakra-ui/react';
 import { Social } from '../components/atoms/Social';
+import Hero from '../components/layout/Hero';
 import { Inner } from '../components/layout/Inner';
-import eyecatch from '../images/hero.png';
 import Meta from '../components/molecules/Meta';
 import PostBodyCss from '../components/post-body';
-import Image from 'next/image';
-import All from '../images/all-book.jpg';
-import Skill from '../images/skill-book.jpg';
-import Design from '../images/design.jpg';
-import Goat from '../images/goat.jpg';
-import Cat from '../images/cat.jpg';
+import eyecatch from '../images/hero.png';
 const About = () => {
   return (
     <>

@@ -10,7 +10,9 @@ body {
   font-family: 'Shippori Mincho', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
-
+html {
+  min-width: 400px;
+}
 ul {
   list-style: none;
 }

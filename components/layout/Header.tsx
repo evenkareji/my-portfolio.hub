@@ -10,7 +10,7 @@ import { Inner } from './Inner';
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box px={{ base: 4, md: 8 }} py={{ base: 2, md: 4 }} mx="auto" width="90%">
+    <Box py={{ base: 2, md: 4 }} mx="auto" width="90%">
       <Flex
         as="header"
         align="center"
